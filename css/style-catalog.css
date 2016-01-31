@@ -1,0 +1,124 @@
+body {
+margin: 0;
+font-size: 12px;
+line-height: 18px;
+color: #283136;
+font-weight: normal; 
+font-style: normal;
+font-family: "Roboto";   
+
+}
+
+h1 {
+font-size: 40px;
+line-height: normal;
+color: #000000;
+font-weight: normal; 
+font-style: normal;
+font-family: "Roboto";      
+}
+
+h2 {
+font-size: 36px;
+line-height: 36px;
+font-weight: normal; 
+color: #000000;
+font-style: normal;
+font-family: "Roboto";       
+}
+
+.clearfix::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 880px;
+    padding: 0 10px;
+    margin: 0 auto;
+    background-color: beige ;
+}
+
+
+.main-header {
+    background-color: #eeeeee;
+    margin-bottom: 80px;
+    
+    
+}
+
+.main-logo {
+    float:left;
+    background-color: #eeeeee;
+    height: 56px;
+}
+
+.main-menu {
+    float: right;
+    background-color: #eeeeee;
+}
+
+.welcome-title {
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-bottom: 90px;
+    background-color: #eeeeee;
+    text-align: center;
+    clear: both;    
+    
+}
+
+.filters {
+    width: 240px;
+    background-color: aquamarine;
+    float: left;
+}
+
+.catalog-items {
+    width: 560px;
+    float:right;
+    background-color: cadetblue;
+}
+
+.catalog-item {
+    width: 240px;
+    float: left;
+    margin-right: 80px;
+    padding-bottom: 80px;
+    background-color: cornflowerblue;
+}
+
+.catalog-item:nth-child(even) {
+    margin-right: 0;
+}
+
+.pages {
+    padding-bottom: 79px;
+}
+
+.map {
+    width: 1199px;
+     margin: 0 auto;
+}
+
+.main-footer {
+    background-color: ;
+}
+
+.footer-social {
+    float: left;
+    background-color: darkslategray;
+}
+
+.footer-friendship {
+    float: right;
+    background-color: aquamarine;
+}
+
+.footer {
+    padding-top: 75px;
+    padding-bottom: 72px;
+}
+
+   

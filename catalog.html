@@ -1,71 +1,87 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style-catalog.css" rel="stylesheet">
     <meta charset="utf-8">
     <title> Магазин готовых макетов «Нёрдс» </title>
   </head>
    
   <body>
     <header class="main-header">
-        <div class="container">
+        <div class="container clearfix">
             <div class="main-logo">
                 <img src="img/logo-header.png" width="139" height="56" alt="Нёрдс-логотип">
             </div>
             <nav class="main-menu">
                 <ul>
-                     <li>СТУДИЯ</li>
+                    <li>СТУДИЯ</li>
                     <li>КЛИЕНТЫ</li>
                     <li>МАГАЗИН</li>
                     <li>КОНТАКТЫ</li>
                     <li class="cart">КОРЗИНА</li>
                 </ul>
             </nav>
-           
-            <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
+            <div class="welcome-title">
+            <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН<br> ГОТОВЫХ МАКЕТОВ</h1>
+            </div>    
         </div>   
     </header>
     
     <div class="content">
-        <div class="container">
-            <div class="price-filter">
-            </div>
-            <div class="sorting">
-            </div>
-            <div class="form">
-                <form>
-                </form>
-            </div>    
-            <div class="catalog-items">
-                <article class="catalog-item">
-                     <img src="img/aviator.jpg" width="240" height="240" alt="aviator.jpg">
-                </article>
-                <article class="catalog-item">
-                    <img src="img/sunset.jpg" width="240" height="240" alt="sunset.jpg">
-                </article>
-                <article class="catalog-item">
-                    <img src="img/forte.jpg" width="240" height="240" alt="forte.jpg">
-                </article>
-                <article class="catalog-item">
-                    <img src="img/modern-organic-thai.jpg" width="240" height="240" alt="modern-organic-thai.jpg">
-                </article>
-                <article class="catalog-item">
-                    <img src="img/avenue.jpg" width="240" height="240" alt="avenue.jpg">
-                </article>
-                <article class="catalog-item">
-                    <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail.jpg">
-                </article>  
-            </div>
-            <div class="pages">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li class="btn-next">СЛЕДУЮЩАЯ</li>
-                </ul>    
-            </div>    
+        <div class="container clearfix">
+          <div class="filters">  
+                <div class="price-filter">СТОИМОСТЬ:
+                </div>
+                <div class="form-filter">
+                    <form>СЕТКА:<br>
+                         <input type="radio" name="type" value="rad1" checked>Адаптивная<br>
+                         <input type="radio" name="type" value="rad2">Фиксированная<br>
+                         <input type="radio" name="type" value="rad3">Резиновая<br>
+                         ОСОБЕННОСТИ:<br>
+                         <input type="checkbox" name="option1" value="#" checked>Слайдер<br>
+                         <input type="checkbox" name="option2" value="#">Блок преимуществ<br>
+                         <input type="checkbox" name="option3" value="#" checked>Новости<br>
+                         <input type="checkbox" name="option4" value="#">Галерея<br>
+                         <input type="checkbox" name="option5" value="#">Корзина<br>
+                         <button type="submit">ПОКАЗАТЬ</button>
+                    </form>
+                </div>
+          </div>      
+          <div class="catalog-items">
+                <div class="sorting-item">СОРТИРОВАТЬ:
+                </div>
+                 <div class="catalog-item-wrapper">
+                        <article class="catalog-item">
+                             <img src="img/aviator.jpg" width="240" height="240" alt="aviator.jpg">
+                        </article>
+                        <article class="catalog-item">
+                            <img src="img/sunset.jpg" width="240" height="240" alt="sunset.jpg">
+                        </article>
+                        <article class="catalog-item">
+                            <img src="img/forte.jpg" width="240" height="240" alt="forte.jpg">
+                        </article>
+                        <article class="catalog-item">
+                            <img src="img/modern-organic-thai.jpg" width="240" height="240" alt="modern-organic-thai.jpg">
+                        </article>
+                        <article class="catalog-item">
+                            <img src="img/avenue.jpg" width="240" height="240" alt="avenue.jpg">
+                        </article>
+                        <article class="catalog-item">
+                            <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail.jpg">
+                        </article>
+                </div>
+                <div class="pages">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li class="btn-next">СЛЕДУЮЩАЯ</li>
+                    </ul>    
+                </div>    
+           </div>
         </div>    
-    </div>  
+     </div>  
     
    
 
@@ -73,7 +89,7 @@
        <div class="map">
             <img src="img/map.jpg" width="1199" height="416" alt="Карта">
        </div>
-       <div class="container">
+       <div class="container footer clearfix">
           <section class="footer-social">
             <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
             <a href="#" class="social-btn social-btn-fb">Фейсбук</a>

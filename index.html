@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title> Магазин готовых макетов «Нёрдс» </title>
@@ -8,7 +9,7 @@
    
   <body>
     <header class="main-header">
-        <div class="container">
+        <div class="container clearfix">
             <div class="main-logo">
                 <img src="img/logo-header.png" width="139" height="56" alt="Нёрдс-логотип">
             </div> 
@@ -26,87 +27,87 @@
         <div class="container"> 
             <div class="slider">
                 <img src="img/slider-devices.png" width="338" height="231" alt="Первый слайд">
-                <img src="img/slider-calculator.png" width="230" height="249" alt="Второй слайд">
-                <img src="img/slider-robot.png" width="333" height="319" alt="Третий слайд">
+               <!-- <img src="img/slider-calculator.png" width="230" height="249" alt="Второй слайд">
+                <img src="img/slider-robot.png" width="333" height="319" alt="Третий слайд"> -->
             </div>    
         </div>
     </header>
         
     <div class="content">
-        <section class="container">
-            <div class="features-item">
-                <div class="websites-picture">
-                    <img src="img/web-sites.png" width="240" height="124" alt="Веб-сайты">
+      <main class="container">
+            <section class="features clearfix">
+                <div class="features-item">
+                    <div class="websites-picture">
+                        <img src="img/web-sites.png" width="240" height="124" alt="Веб-сайты">
+                    </div>
+                    <div class="features-title">ВЕБ-САЙТЫ
+                    </div>
+                    <p>
+                    Мир никогда не будет прежним после того как увидит ваш сайт!    
+                    </p>
+                    <a href="#" class="btn btn-red">ЗАКАЗАТЬ
+                    </a>
                 </div>
-                <div class="features-title">ВЕБ-САЙТЫ
-                </div>
-                <p>
-                Мир никогда не будет прежним после того как увидит ваш сайт!    
-                </p>
-                <a href="#" class="btn btn-red">ЗАКАЗАТЬ
-                </a>
-            </div>
 
-            <div class="features-item">
-                <div class="apps-picture">
-                    <img src="img/apps.png" width="240" height="124" alt="Приложения">
-                </div>
-                <div class="features-title">ПРИЛОЖЕНИЯ
-                </div>
-                <p>
-                Покорите топ-10 приложений в AppStore и Google Play   
-                </p>
-                <a href="#" class="btn btn-red">ЗАКАЗАТЬ
-                </a>
-             </div>
+                <div class="features-item">
+                    <div class="apps-picture">
+                        <img src="img/apps.png" width="240" height="124" alt="Приложения">
+                    </div>
+                    <div class="features-title">ПРИЛОЖЕНИЯ
+                    </div>
+                    <p>
+                    Покорите топ-10 приложений в AppStore и Google Play   
+                    </p>
+                    <a href="#" class="btn btn-red">ЗАКАЗАТЬ
+                    </a>
+                 </div>
 
-            <div class="features-item">
-                <div class="presentation-picture">
-                    <img src="img/presentation.png" width="240" height="124" alt="Презентация">
+                <div class="features-item">
+                    <div class="presentation-picture">
+                        <img src="img/presentation.png" width="240" height="124" alt="Презентация">
+                    </div>
+                    <div class="features-title">ПРЕЗЕНТАЦИИ
+                    </div>
+                    <p>
+                    Вы даже не подозреваете, насколько вы изумительны! 
+                    </p>
+                    <a href="#" class="btn btn-yellow">ЗАКАЗАТЬ
+                    </a>
                 </div>
-                <div class="features-title">ПРЕЗЕНТАЦИИ
-                </div>
-                <p>
-                Вы даже не подозреваете, насколько вы изумительны! 
-                </p>
-                <a href="#" class="btn btn-yellow">ЗАКАЗАТЬ
-                </a>
-            </div>
-         </section>
-      
-        
-        <section class="container">
-            <section class="content-column-left">
-                <h2 class="content-column-title">Мы - маленька, но гордая дизайн-студия из Краснодара.</h2>
-                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.                     </p>
-                <p>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
-                <ul>
-                    <li>Веб-сайтов любой сложности</li>
-                    <li>Мобильный приложений для iOS и Android</li>
-                    <li>Слайдшоу и видео для корпоротивных призентаций</li>
-                </ul>  
-            </section>
-            
-            <section class="content-column-right">
-                <div class="logo-since">
-                    <img src="img/logo-since.png" width="240" height="119" alt="Логотип">
-                </div>
-                <p>КАК МЫ РАБОТАЕМ:</p>
-                 <ul>
-                    <li>С самоотдачей 146%</li>
-                    <li>Соблюдая сроки на 100%</li>
-                    <li>По предоплате 50%</li>
-                </ul>  
+             </section>
+
+
+             <section class="info clearfix">
+                <section class="content-column-left">
+                    <h2 class="content-column-title">Мы - маленька, но гордая дизайн-студия из Краснодара.</h2>
+                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+                    <p>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+                    <ul>
+                        <li>Веб-сайтов любой сложности</li>
+                        <li>Мобильный приложений для iOS и Android</li>
+                        <li>Слайдшоу и видео для корпоротивных призентаций</li>
+                    </ul>  
+                </section>
+
+                <section class="content-column-right">
+                    <div class="logo-since">
+                        <img src="img/logo-since.png" width="240" height="119" alt="Логотип">
+                    </div>
+                    <p>КАК МЫ РАБОТАЕМ:</p>
+                     <ul>
+                        <li>С самоотдачей 146%</li>
+                        <li>Соблюдая сроки на 100%</li>
+                        <li>По предоплате 50%</li>
+                    </ul>  
+                </section>    
             </section>    
-        </section>    
-        
-        <div class="container">
-            <ul>
-                <li class="glukhanko"><img src="img/glukhanko.png" width="198" height="37" alt="Glukhanko"></li>
-                <li class="html-academy"><img src="img/htmlacademy.png" width="199" height="68" alt="htmlacademy"></li>
-                <li class="borodinski"><img src="img/borodinski.png" width="209" height="86" alt="borodinski"></li>
-            </ul>    
-        </div>
+
+            <div class="partners clearfix">
+                  <div class="glukhanko partners-item"><img src="img/glukhanko.png" width="198" height="37" alt="Glukhanko"></div>
+                  <div class="html-academy partners-item"><img src="img/htmlacademy.png" width="199" height="68" alt="htmlacademy"></div>
+                  <div class="borodinski partners-item"><img src="img/borodinski.png" width="209" height="86" alt="borodinski"></div>
+            </div>
+      </main>
      </div>    
      
     
@@ -115,7 +116,7 @@
           <div class="map">
             <img src="img/map.jpg" width="1199" height="416" alt="Карта">
           </div>
-          <div class="container">
+          <div class="container footer clearfix">
               <section class="footer-social">
                 <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
                 <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
