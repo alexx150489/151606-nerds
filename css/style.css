@@ -49,8 +49,12 @@ font-family: "Roboto";
     height: 56px;
 }
 
+ul li {
+    list-style-type:none;
+    display: inline;
+}
+
 .main-menu {
-    
     float: right;
     background-color: bisque;
 }
@@ -123,7 +127,8 @@ font-family: "Roboto";
 
 .map {
     width: 1199px;
-     margin: 0 auto;
+    margin: 0 auto;
+    background-color: chartreuse;
 }
 
 .main-footer {

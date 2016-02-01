@@ -57,6 +57,12 @@ font-family: "Roboto";
 .main-menu {
     float: right;
     background-color: #eeeeee;
+    list-style-type:none;
+}
+
+ul li {
+    list-style-type:none;
+    display: inline;
 }
 
 .welcome-title {
@@ -100,6 +106,7 @@ font-family: "Roboto";
 .map {
     width: 1199px;
      margin: 0 auto;
+    background-color: chartreuse;
 }
 
 .main-footer {
