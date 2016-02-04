@@ -27,12 +27,14 @@ font-style: normal;
 font-family: "Roboto";       
 }
 
+/* Распорка */
 .clearfix::after {
     content:"";
     display: table;
     clear: both;
 }
 
+/* Контейнер центровки */
 .container {
     width: 880px;
     padding: 0 10px;
@@ -40,12 +42,10 @@ font-family: "Roboto";
     background-color: beige ;
 }
 
-
+/* Шапка */
 .main-header {
     background-color: #eeeeee;
     margin-bottom: 80px;
-    
-    
 }
 
 .main-logo {
@@ -56,13 +56,23 @@ font-family: "Roboto";
 
 .main-menu {
     float: right;
+    width: 660px;
     background-color: #eeeeee;
-    list-style-type:none;
 }
 
-ul li {
-    list-style-type:none;
-    display: inline;
+.main-menu ul {
+   float: right;
+   list-style-type:none; 
+   background-color: chartreuse;    
+}
+
+.main-menu li {
+    padding-right: 56px;
+    display: inline-block;
+}
+
+.main-menu li:last-child {
+    padding-right: 0px;             /* почему с ли работает, а с ул нет ? */
 }
 
 .welcome-title {
@@ -75,16 +85,105 @@ ul li {
     
 }
 
+
+
+/* Сортировка по */
+.sorting-item ul {
+display: inline-block;
+width: 560px;
+padding-left: 0px;
+background-color: chartreuse;    
+}
+
+
+
+.sorting-item li {
+    padding-right: 46px;
+    display: inline-block;
+    list-style-type:none;
+}
+
+/* Фильтры */
 .filters {
     width: 240px;
     background-color: aquamarine;
     float: left;
 }
 
+.price-filter {
+    width: 240px;
+    margin-bottom: 50px;
+}
+
+.radio-filter {
+    width: 240px;
+    margin-bottom: 50px;
+}
+
+.checkbox-filter {
+    width: 240px;
+}
+
+.submit button {
+    padding-top: 56px;
+}
+
+.checkbox-filter input {
+    padding-bottom: 18px;
+}
+
+/* Каталог */
 .catalog-items {
     width: 560px;
     float:right;
     background-color: cadetblue;
+}
+
+.border-img {
+   
+    width: 240px;
+    height: 30px;
+    background-color: #f1f1f1;
+    margin-top: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+}
+
+.border-img ul {
+    padding-top: 8px;
+    padding-left: 12px;
+}
+
+.border-img li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+    border-radius: 50%;               /*появился ненужный отступ! */
+    background-color: white;
+    list-style-type:none;
+}
+
+.popup-block {
+    display: none;
+    position:absolute;
+    width: 200px;
+    height: 200px;                        /*спрятал попап  нужно зацентровать!!! */
+    text-align: center;
+    background-color: white;
+}
+
+.popup-block h3 {
+    margin-top: 37px;
+}
+
+.popup-block div {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 140px;
+    height: 28px;
+    background-color: #fb565a;
 }
 
 .catalog-item {
@@ -92,6 +191,7 @@ ul li {
     float: left;
     margin-right: 80px;
     padding-bottom: 80px;
+   
     background-color: cornflowerblue;
 }
 
@@ -99,14 +199,52 @@ ul li {
     margin-right: 0;
 }
 
+/* Страницы */
 .pages {
     padding-bottom: 79px;
+    background-color: chartreuse;
+    clear: both;
 }
 
+.pages ul {
+    padding-left: 0px;
+    list-style-type:none;
+}
+
+.pages li {
+    display: inline-block;
+    margin-right: 10px; 
+    
+}
+
+.pages-btn {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: #f1f1f1;  /* Это кнопки или ссылки ? */
+    padding: 9px 14px;
+    border: 3px solid #f1f1f1 ;
+    border-radius: 3px;
+    
+}
+
+.current-btn {
+    background-color: #ffffff;
+}
+
+.btn-next {
+    width: 140px;
+}
+
+/* Карта */
 .map {
     width: 1199px;
-     margin: 0 auto;
+    margin: 0 auto;
     background-color: chartreuse;
+}
+
+.map img {
+    display:block;
 }
 
 .main-footer {

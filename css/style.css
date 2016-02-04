@@ -27,10 +27,6 @@ font-style: normal;
 font-family: "Roboto";       
 }
 
-.main-header {
-    background-color: #eeeeee;
-    margin-bottom: 80px;
-}
 
 .clearfix::after {
     content:"";
@@ -43,30 +39,101 @@ font-family: "Roboto";
     margin: 0 auto;
     background-color: beige ;
 }
-.main-logo {
-    float:left;
-    background-color: bisque;
-    height: 56px;
+.main-header {
+    background-color: #eeeeee;
+    margin-bottom: 80px;
+    
+    
 }
 
-ul li {
-    list-style-type:none;
-    display: inline;
+.main-logo {
+    float:left;
+    background-color: #eeeeee;
+    height: 56px;
 }
 
 .main-menu {
     float: right;
-    background-color: bisque;
+    width: 660px;
+    background-color: #eeeeee;
+    
 }
 
+.main-menu ul {
+   float: right;
+   
+   list-style-type:none; 
+   background-color: chartreuse;    
+    
+    
+}
+
+.main-menu li {
+    padding-right: 56px;
+    display: inline-block;
+}
+
+.main-menu li:last-child {
+    padding-right: 0px;             /* почему с ли работает, а с ул нет ? */
+}
+
+/* Слайдер */
 .slider {
     width: 880px;
     margin-top: 54px;
     padding-bottom: 80px;
-   
     background-color: bisque;
 }
 
+.slider-content {
+    width: 380px;
+    float: left;
+    margin-top: 86px;
+    margin-right: 20px;
+    background-color: darkolivegreen; 
+}
+
+.slider-content .btn {
+    width: 240px;
+    height: 28px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #fb565a;
+    border-radius: 3px;
+}
+
+.slider-btn {
+    width: 60px;
+    float: left;
+    margin-top: 196px;
+    margin-right: 21px;
+    background-color: darkolivegreen;
+}
+
+.slider-btn ul {
+    margin: 0px;
+    padding-left: 6px;
+}
+
+.slider-btn li {
+    display: inline-block;
+    list-style-type:none;
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    margin-right: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.slider-pic {
+    width: 399px;
+    float: right;
+    background-color: darkolivegreen;
+}
+
+
+/* Контент */
 .content {
     background-color: white;
 }
@@ -101,30 +168,47 @@ ul li {
     background-color: darkcyan;
 }
 
+.content-column-left ul {
+    list-style-type:none;
+}
+
+.content-column-right ul {
+    list-style-type:none;
+}
+
 .content-column-right {
     width: 240px;
     float: right;
     background-color: cyan;
 }
 
+.red-dash {
+    color: red;
+}
+
+/* Парнеры */
 .partners {
     border-bottom: 2px solid red;
     padding-top: 45px;
+    width: 880px;
+    text-align: center; 
     padding-bottom: 31px; 
     margin-bottom: 85px;
 }
 
+
+
 .partners-item {
-    margin-right: 80px;
-    float: left;
-    width: 240px;
-    background-color: antiquewhite;
+  display: inline-block;
+  margin-right: 100px;
+   
 }
 
-.partners-item:last-child {
-    margin-right: 0;
+.partners div:last-child {
+    margin-right: 0px; 
 }
 
+/* Карта */
 .map {
     width: 1199px;
     margin: 0 auto;

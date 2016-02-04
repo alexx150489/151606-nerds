@@ -31,14 +31,20 @@
     <div class="content">
         <div class="container clearfix">
           <div class="filters">  
-                <div class="price-filter">СТОИМОСТЬ:
+                <div class="price-filter">
+                    <h3>СТОИМОСТЬ:</h3>
                 </div>
-                <div class="form-filter">
-                    <form>СЕТКА:<br>
+                <div class="radio-filter">
+                    <form>
+                         <h3>СЕТКА:</h3>
                          <input type="radio" name="type" value="rad1" checked>Адаптивная<br>
                          <input type="radio" name="type" value="rad2">Фиксированная<br>
                          <input type="radio" name="type" value="rad3">Резиновая<br>
-                         ОСОБЕННОСТИ:<br>
+                    </form>
+                 </div>  
+                 <div class="checkbox-filter">
+                     <form>    
+                         <h3>ОСОБЕННОСТИ:</h3>
                          <input type="checkbox" name="option1" value="#" checked>Слайдер<br>
                          <input type="checkbox" name="option2" value="#">Блок преимуществ<br>
                          <input type="checkbox" name="option3" value="#" checked>Новости<br>
@@ -49,34 +55,87 @@
                 </div>
           </div>      
           <div class="catalog-items">
-                <div class="sorting-item">СОРТИРОВАТЬ:
+                <div class="sorting-item">
+                    <ul>
+                        <li>СОРТИРОВАТЬ:</li>
+                        <li>ПО ЦЕНЕ</li>
+                        <li>ПО ТИПУ</li>
+                        <li>ПО ФУНКЦИОНАЛУ</li>
+                    </ul>    
                 </div>
-                 <div class="catalog-item-wrapper">
+                 <div class="catalog-wrapper">
                         <article class="catalog-item">
-                             <img src="img/aviator.jpg" width="240" height="240" alt="aviator.jpg">
+                            <div class="border-img">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul> 
+                            </div> 
+                            <img src="img/aviator.jpg" width="240" height="240" alt="aviator.jpg">
                         </article>
                         <article class="catalog-item">
+                            <div class="popup-block">
+                                <h3>SUNSET</h3>
+                                <p>Интернет-магазин с личным кабинетом</p>
+                                <div>10000 Р.</div>
+                            </div>    
+                            <div class="border-img">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul> 
+                            </div> 
                             <img src="img/sunset.jpg" width="240" height="240" alt="sunset.jpg">
                         </article>
                         <article class="catalog-item">
+                            <div class="border-img">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul> 
+                            </div> 
                             <img src="img/forte.jpg" width="240" height="240" alt="forte.jpg">
                         </article>
                         <article class="catalog-item">
+                            <div class="border-img">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul> 
+                            </div> 
                             <img src="img/modern-organic-thai.jpg" width="240" height="240" alt="modern-organic-thai.jpg">
                         </article>
                         <article class="catalog-item">
+                            <div class="border-img">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul> 
+                            </div> 
                             <img src="img/avenue.jpg" width="240" height="240" alt="avenue.jpg">
                         </article>
                         <article class="catalog-item">
+                            <div class="border-img">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>    
+                            </div> 
                             <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail.jpg">
                         </article>
                 </div>
                 <div class="pages">
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li class="btn-next">СЛЕДУЮЩАЯ</li>
+                        <li class="pages-btn current-btn">1</li>
+                        <li class="pages-btn">2</li>
+                        <li class="pages-btn">3</li>
+                        <li class="pages-btn btn-next">СЛЕДУЮЩАЯ</li>
                     </ul>    
                 </div>    
            </div>
