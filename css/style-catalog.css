@@ -1,30 +1,56 @@
 body {
 margin: 0;
+min-width: 1200px;
 font-size: 12px;
 line-height: 18px;
 color: #283136;
 font-weight: normal; 
 font-style: normal;
-font-family: "Roboto";   
+font-family: "Roboto", "Arial", sans-serif;   
 
 }
 
 h1 {
-font-size: 40px;
-line-height: normal;
-color: #000000;
-font-weight: normal; 
-font-style: normal;
-font-family: "Roboto";      
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;    
+    color: #000000;
+    font-weight: normal; 
+    font-style: normal;
+    font-family: "Roboto", "Arial", sans-serif;      
 }
 
 h2 {
-font-size: 36px;
-line-height: 36px;
-font-weight: normal; 
-color: #000000;
-font-style: normal;
-font-family: "Roboto";       
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0; 
+    font-weight: normal; 
+    color: #000000;
+    font-style: normal;
+    font-family: "Roboto", "Arial", sans-serif;       
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+ul, li, p {
+    margin: 0;
+    padding: 0;
 }
 
 /* Распорка */
@@ -46,29 +72,41 @@ font-family: "Roboto";
 .main-header {
     background-color: #eeeeee;
     margin-bottom: 80px;
+    margin-top: 27px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 .main-logo {
     float:left;
     background-color: #eeeeee;
+    width: 139px;
     height: 56px;
 }
 
 .main-menu {
     float: right;
+    padding: 0;
+    margin: 0;
     width: 660px;
     background-color: #eeeeee;
 }
 
 .main-menu ul {
-   float: right;
-   list-style-type:none; 
-   background-color: chartreuse;    
+    float: right;
+    padding-top: 21px;
+    font-size: 0;
+    list-style-type:none; 
+    background-color: chartreuse;    
 }
 
 .main-menu li {
-    padding-right: 56px;
+    vertical-align: top;
     display: inline-block;
+    padding-right: 46px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 .main-menu li:last-child {
@@ -76,13 +114,15 @@ font-family: "Roboto";
 }
 
 .welcome-title {
-    margin: 0 auto;
-    margin-top: 70px;
-    padding-bottom: 90px;
-    background-color: #eeeeee;
+  clear: both;    
+}
+
+.welcome-title h1 {
+    font-size: 40px;
+    line-height: 50px;
     text-align: center;
-    clear: both;    
-    
+    padding-top: 65px;
+    padding-bottom: 84px;
 }
 
 
@@ -91,6 +131,8 @@ font-family: "Roboto";
 .sorting-item ul {
 display: inline-block;
 width: 560px;
+margin-bottom: 21px;
+padding-left: 0px;
 padding-left: 0px;
 background-color: chartreuse;    
 }
@@ -104,6 +146,13 @@ background-color: chartreuse;
 }
 
 /* Фильтры */
+
+.maket {
+    width: 240px;
+    height: 132px;
+    background-color: cornflowerblue;
+}
+
 .filters {
     width: 240px;
     background-color: aquamarine;
@@ -112,24 +161,56 @@ background-color: chartreuse;
 
 .price-filter {
     width: 240px;
-    margin-bottom: 50px;
+    margin-bottom: 41px;
 }
+
+.price-filter h3 {
+    margin-bottom: 10px;
+}
+
 
 .radio-filter {
     width: 240px;
-    margin-bottom: 50px;
+    margin-bottom: 39px;
+}
+
+.radio-filter h3 {
+    margin-bottom: 9px;
 }
 
 .checkbox-filter {
     width: 240px;
 }
 
-.submit button {
-    padding-top: 56px;
+.checkbox-filter h3 {
+    margin-bottom: 10px;
 }
 
-.checkbox-filter input {
-    padding-bottom: 18px;
+
+label input {
+   margin-bottom: 17px;  /* Отступ между инпутами! */
+}
+
+.filters form {
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+.filters h3 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+form button {
+    width: 156px;
+    height: 38px;
+    margin-top: 57px;
+    font-size: 12px;
+    line-height: 18px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    border: 0px;
 }
 
 /* Каталог */
@@ -160,27 +241,46 @@ background-color: chartreuse;
     width: 10px;
     height: 10px;
     margin-right: 7px;
-    border-radius: 50%;               /*появился ненужный отступ! */
+    border-radius: 50%;               
     background-color: white;
     list-style-type:none;
 }
 
 .popup-block {
     display: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #283136;
     position:absolute;
     width: 200px;
-    height: 200px;                        /*спрятал попап  нужно зацентровать!!! */
-    text-align: center;
+    top: 50px;
+    left: 20px;
+    height: 200px;                        /*спрятал попап  нужно зацентровать! Абсолюьно спозиционарован от catalog-item */
+    
     background-color: white;
 }
 
 .popup-block h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    text-align: center;
     margin-top: 37px;
+    margin-bottom: 16px;
+}
+
+.popup-block p {
+    margin-bottom: 28px;
+    text-align: center;
 }
 
 .popup-block div {
     margin: 0 auto;
     padding-top: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
     width: 140px;
     height: 28px;
     background-color: #fb565a;
@@ -189,6 +289,7 @@ background-color: chartreuse;
 .catalog-item {
     width: 240px;
     float: left;
+    position: relative;
     margin-right: 80px;
     padding-bottom: 80px;
    
@@ -219,10 +320,10 @@ background-color: chartreuse;
 
 .pages-btn {
     width: 35px;
-    height: 35px;
+    height: 27px;
     text-align: center;
+    padding-top: 8px;
     background-color: #f1f1f1;  /* Это кнопки или ссылки ? */
-    padding: 9px 14px;
     border: 3px solid #f1f1f1 ;
     border-radius: 3px;
     
@@ -238,17 +339,21 @@ background-color: chartreuse;
 
 /* Карта */
 .map {
-    width: 1199px;
+    width: 1200px;
+    height: 416px;
     margin: 0 auto;
+    margin-bottom: 78px;
     background-color: chartreuse;
 }
 
 .map img {
-    display:block;
+    width: 1200px;
+    height: 416px;
 }
 
 .main-footer {
-    background-color: ;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .footer-social {
@@ -261,9 +366,12 @@ background-color: chartreuse;
     background-color: aquamarine;
 }
 
-.footer {
-    padding-top: 75px;
-    padding-bottom: 72px;
+.footer-friendship h2 {
+    margin-bottom: 7px;
 }
 
-   
+.footer {
+    
+    padding-bottom: 76px;
+}
+

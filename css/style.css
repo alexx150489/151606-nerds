@@ -1,32 +1,46 @@
 body {
 margin: 0;
+padding: 0;
+min-width: 1200px;
 font-size: 16px;
 line-height: 22px;
-color: 283136;
+color: #283136;
+background-color: #e2e0e0;
 font-weight: normal; 
 font-style: normal;
-font-family: "Roboto";   
-
+font-family: "Roboto", "Arial", sans-serif;   
 }
 
 h1 {
 font-size: 36px;
 line-height: 36px;
-color: 000000;
+margin: 0;
+color: #000000;
 font-weight: normal; 
 font-style: normal;
-font-family: "Roboto";      
+font-family: "Roboto", "Arial", sans-serif;      
 }
 
 h2 {
 font-size: 36px;
 line-height: 36px;
+margin: 0;
 font-weight: normal; 
-color: 000000;
+color: #000000;
 font-style: normal;
-font-family: "Roboto";       
+font-family: "Roboto" , "Arial", sans-serif;       
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+ul, li, p {
+    margin: 0;
+    padding: 0;
+}
 
 .clearfix::after {
     content:"";
@@ -42,6 +56,10 @@ font-family: "Roboto";
 .main-header {
     background-color: #eeeeee;
     margin-bottom: 80px;
+    margin-top: 27px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
     
     
 }
@@ -49,11 +67,14 @@ font-family: "Roboto";
 .main-logo {
     float:left;
     background-color: #eeeeee;
+    width: 139px;
     height: 56px;
 }
 
 .main-menu {
     float: right;
+    padding: 0;
+    margin: 0;
     width: 660px;
     background-color: #eeeeee;
     
@@ -61,7 +82,8 @@ font-family: "Roboto";
 
 .main-menu ul {
    float: right;
-   
+   padding-top: 21px;
+    font-size: 0;
    list-style-type:none; 
    background-color: chartreuse;    
     
@@ -69,8 +91,11 @@ font-family: "Roboto";
 }
 
 .main-menu li {
-    padding-right: 56px;
+    vertical-align: top;
     display: inline-block;
+    padding-right: 46px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 .main-menu li:last-child {
@@ -80,17 +105,35 @@ font-family: "Roboto";
 /* Слайдер */
 .slider {
     width: 880px;
-    margin-top: 54px;
-    padding-bottom: 80px;
+    margin-top: 34px;
+    padding-bottom: 0px;
     background-color: bisque;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: none;
+    
+}
+
+.slider .title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 13px;
+    
 }
 
 .slider-content {
     width: 380px;
     float: left;
-    margin-top: 86px;
+    margin-bottom: 80px;
+    margin-top: 41px;
     margin-right: 20px;
+    vertical-align: middle;
     background-color: darkolivegreen; 
+    
+}
+
+.slider-content p {
+    margin-bottom: 24px;
 }
 
 .slider-content .btn {
@@ -100,14 +143,17 @@ font-family: "Roboto";
     padding-top: 10px;
     background-color: #fb565a;
     border-radius: 3px;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .slider-btn {
     width: 60px;
     float: left;
-    margin-top: 196px;
+    margin-top: 208px;
     margin-right: 21px;
-    background-color: darkolivegreen;
+    margin-bottom: 94px;
+    background-color: crimson;
 }
 
 .slider-btn ul {
@@ -117,6 +163,7 @@ font-family: "Roboto";
 
 .slider-btn li {
     display: inline-block;
+    text-align: center;
     list-style-type:none;
     width: 10px;
     height: 10px;
@@ -145,15 +192,53 @@ font-family: "Roboto";
     background-color: yellow;
 }
 
-.features {
-    margin-bottom: 80px;
+.features-item p {
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 22px;
     
 }
+
+.features-title {
+    padding-top: 15px;
+    padding-bottom: 23px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-item .btn {
+    width: 140px;
+    height: 28px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 18px;
+    
+}
+
+.features-item .btn-red {
+    background-color: #fb565a;
+}
+
+.features-item .btn-green {
+    background-color: #00ca74;
+}
+
+.features-item .btn-yellow {
+    background-color: #efc84a;
+}
+
 
 .features-item:last-child {
     margin-right: 0;
 }
 
+/* Инфо блок */
 .info {
     border-top: 2px solid red;
     border-bottom: 2px solid red;
@@ -162,18 +247,51 @@ font-family: "Roboto";
     
 }
 
+.content-column-title {
+    padding-top: 15px;
+    margin-bottom: 14px;
+}
+
+.content-column-left p + p  {
+    margin-top: 44px;
+    margin-bottom: 25px;
+}
+
+
+
 .content-column-left {
     width: 621px;
     float: left;
     background-color: darkcyan;
 }
 
+
 .content-column-left ul {
     list-style-type:none;
+    margin: 0;
+    padding: 0;
 }
 
 .content-column-right ul {
     list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.content-column-right li {
+    padding-bottom: 24px;
+}
+
+.content-column-left li {
+    padding-bottom: 24px;
+}
+
+.content-column-right p {
+    margin-bottom: 26px;
+}
+
+.logo-since {
+    margin-bottom: 68px;
 }
 
 .content-column-right {
@@ -181,6 +299,8 @@ font-family: "Roboto";
     float: right;
     background-color: cyan;
 }
+
+
 
 .red-dash {
     color: red;
@@ -201,6 +321,7 @@ font-family: "Roboto";
 .partners-item {
   display: inline-block;
   margin-right: 100px;
+  vertical-align: middle;    /* верное выравнивание !!! */
    
 }
 
@@ -210,9 +331,16 @@ font-family: "Roboto";
 
 /* Карта */
 .map {
-    width: 1199px;
+    width: 1200px;
+    height: 416px;
     margin: 0 auto;
+    margin-bottom: 78px;
     background-color: chartreuse;
+}
+
+.map img {
+    width: 1200px;
+    height: 416px;
 }
 
 .main-footer {
@@ -229,8 +357,12 @@ font-family: "Roboto";
     background-color: aquamarine;
 }
 
+.footer-friendship h2 {
+    margin-bottom: 7px;
+}
+
 .footer {
-    padding-top: 75px;
-    padding-bottom: 72px;
+    
+    padding-bottom: 76px;
 }
 
