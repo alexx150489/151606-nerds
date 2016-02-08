@@ -10,7 +10,7 @@
    
   <body>
     <header class="main-header">
-        <div class="container clearfix">
+        <div class="container header-wrapper clearfix">
             <div class="main-logo">
                 <a href="#">
                     <img src="img/logo-header.png" width="139" height="56" alt="Нёрдс-логотип">
@@ -18,11 +18,21 @@
             </div> 
             <nav class="main-menu">
                 <ul>
-                    <li>СТУДИЯ</li>
-                    <li>КЛИЕНТЫ</li>
-                    <li>МАГАЗИН</li>
-                    <li>КОНТАКТЫ</li>
-                    <li class="cart">КОРЗИНА</li>
+                    <li>
+                        <a class="current-position" href="#">СТУДИЯ</a>
+                    </li>
+                    <li>
+                        <a href="#">КЛИЕНТЫ</a>
+                    </li>
+                    <li>
+                        <a href="#">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="#">КОНТАКТЫ</a>
+                    </li>
+                    <li class="cart-li">
+                        <a class="cart" href="#">КОРЗИНА</a>
+                    </li>
                 </ul>
             </nav>
           </div>    
@@ -122,9 +132,15 @@
             </section>    
 
             <div class="partners clearfix">
-                  <div class="glukhanko partners-item"><img src="img/glukhanko.png" width="198" height="37" alt="Glukhanko"></div>
-                  <div class="html-academy partners-item"><img src="img/htmlacademy.png" width="199" height="68" alt="htmlacademy"></div>
-                  <div class="borodinski partners-item"><img src="img/borodinski.png" width="209" height="86" alt="borodinski"></div>
+                  <div class="glukhanko partners-item">
+                      <img src="img/glukhanko.png" width="198" height="37" alt="Glukhanko">
+                  </div>
+                  <div class="html-academy partners-item">
+                      <img src="img/htmlacademy.png" width="199" height="68" alt="htmlacademy">  <!-- сделать ссылками задать размеры зацентровать, затем в бек поставить серых и заховерить на черных -->
+                  </div>
+                  <div class="borodinski partners-item">
+                      <img src="img/borodinski.png" width="209" height="86" alt="borodinski">
+                  </div>
             </div>
       </div>
      </div>    
@@ -134,14 +150,20 @@
       <footer class="main-footer">
           <div class="map">
               <div class="map-block">
+                 <h3>NЁRDS DESIGN STUDIO</h3>
+                  <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
+                  <p>тел. +7 (812) 275-75-75</p>
+                  <a href="#">НАПИШИТЕ НАМ</a>
               </div>      
               <img src="img/map-without-block.jpg" width="1200" height="416" alt="Карта">
           </div>
           <div class="container footer clearfix">
               <section class="footer-social">
-                <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-                <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-                <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+                 <ul>
+                     <li><a class="social-vk" href="#"></a></li>
+                     <li><a class="social-fb" href="#"></a></li>
+                     <li><a class="social-inst" href="#"></a></li>
+                 </ul>              
               </section>
               
               <section class="footer-friendship">

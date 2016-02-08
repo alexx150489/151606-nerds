@@ -72,10 +72,14 @@ ul, li, p {
 .main-header {
     background-color: #eeeeee;
     margin-bottom: 80px;
-    margin-top: 27px;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+.header-wrapper {
+    background-color: #eeeeee;
+    padding-top: 27px;
 }
 
 .main-logo {
@@ -91,14 +95,14 @@ ul, li, p {
     margin: 0;
     width: 660px;
     background-color: #eeeeee;
+    
 }
 
 .main-menu ul {
-    float: right;
-    padding-top: 21px;
+   float: right;
+   padding-top: 21px;
     font-size: 0;
-    list-style-type:none; 
-    background-color: chartreuse;    
+   list-style-type:none; 
 }
 
 .main-menu li {
@@ -109,10 +113,66 @@ ul, li, p {
     line-height: 30px;
 }
 
+.main-menu a{
+    color: #000000;
+}
+
 .main-menu li:last-child {
     padding-right: 0px;             /* почему с ли работает, а с ул нет ? */
 }
 
+.current-position {
+    
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fb565a ;
+    
+}
+
+.main-menu a:hover {
+    color: #fb565a;
+}
+
+.main-menu a:active {
+    color: #8f8f8f;
+}
+
+
+
+.main-menu .cart {
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    width: 100px;
+    background-color: #eeeeee;
+}
+
+.cart::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 8px;    
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -10px;    
+      
+}
+
+.cart:hover::before {
+  background: transparent url("../img/sprite.png") no-repeat;   /* изменяет иконку при наведении */
+  background-position: -10px -45px;  
+  opacity: 1;    
+}
+
+.cart:active::before {
+    background: transparent url("../img/sprite.png") no-repeat;  /* изменяет прозрачность */
+    background-position: -10px -10px; 
+    opacity: 0.15;
+}
+
+
+/* WELCOME */
 .welcome-title {
   clear: both;    
 }
@@ -274,7 +334,8 @@ form button {
     text-align: center;
 }
 
-.popup-block div {
+.popup-block a {
+    display: block;
     margin: 0 auto;
     padding-top: 10px;
     font-size: 18px;
@@ -324,7 +385,7 @@ form button {
     text-align: center;
     padding-top: 8px;
     background-color: #f1f1f1;  /* Это кнопки или ссылки ? */
-    border: 3px solid #f1f1f1 ;
+    border: 2px solid #f1f1f1 ;
     border-radius: 3px;
     
 }
@@ -342,6 +403,7 @@ form button {
     width: 1200px;
     height: 416px;
     margin: 0 auto;
+    position: relative;
     margin-bottom: 78px;
     background-color: chartreuse;
 }
@@ -351,19 +413,138 @@ form button {
     height: 416px;
 }
 
+.map-block {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+    position:absolute;
+    top: 88px;
+    left: 160px;
+    width: 250px;
+    height: 240px;                        /*спрятал попап.  Абсолютно спозиционарован от map */
+    background-color: white;
+}
+
+.map-block h3 {
+    margin-top: 17px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+.map-block p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 21px;
+    color: #666666;
+}
+
+.map-block p + p {
+    margin-top: 19px;
+    margin-bottom: 26px;
+}
+
+.map-block a {
+    display: block;
+    width: 204px;
+    height: 28px;
+    text-align: center;
+    background-color: #fb565a;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 3px;
+}
+
+/*footer ready*/
 .main-footer {
     font-size: 16px;
     line-height: 22px;
+    
 }
 
 .footer-social {
     float: left;
-    background-color: darkslategray;
 }
+
+.footer-social ul {
+    font-size: 0;
+}
+
+.footer-social li {
+    font-size: 12px;
+    line-height: 18px;
+    
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.footer-social a {
+    display: block;
+    position: relative;
+    width: 62px ;
+    height: 62px ;
+    margin-right: 27px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+}
+
+.social-vk::before {
+  content: "";
+  position: absolute;
+  top: 24px;   
+  left: 19px;    
+  width: 26px;
+  height: 15px;
+  
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -399px; 
+}
+
+.social-fb::before {
+  content: "";
+  position: absolute;
+  top: 20px;   
+  left: 25px;
+  width: 12px;
+  height: 22px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -286px; 
+}
+
+.social-inst::before {
+  content: "";
+  position: absolute;
+  top: 20px;   
+  left: 22px;
+  width: 21px;
+  height: 21px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -328px; 
+}
+
+
+.footer-social a:hover {
+    background-color: #fb565a;
+}
+
+.footer-social a:active {
+    background-color: #d6494d;
+    box-shadow: inset 0 3px 0 1px #b63e42 ;
+}
+
+
+
+
 
 .footer-friendship {
     float: right;
-    background-color: aquamarine;
+    background-color: #ffffff;
 }
 
 .footer-friendship h2 {
@@ -371,7 +552,7 @@ form button {
 }
 
 .footer {
-    
+    background-color: #ffffff;
     padding-bottom: 76px;
 }
 
