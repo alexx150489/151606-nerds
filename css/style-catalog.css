@@ -194,10 +194,13 @@ width: 560px;
 margin-bottom: 21px;
 padding-left: 0px;
 padding-left: 0px;
-background-color: chartreuse;    
+background-color: white;    
 }
 
-
+.sorting-item .sorting-price {
+    color: #b2b2b2;
+    border-bottom: 1px dotted #00ca74;
+}
 
 .sorting-item li {
     padding-right: 46px;
@@ -273,6 +276,80 @@ form button {
     border: 0px;
 }
 
+form button:hover {
+    background-color: #e5e5e5;
+}
+form button:active {
+    background-color:  #d5d5d5;
+    box-shadow: inset 0 3px 0 0px #b5b5b5;
+}
+
+
+
+/* Замена стандартных радио кнопок */
+
+input[type="radio"] {
+    display:none;    
+
+}
+
+.radio-filter label {
+    display:block;
+    padding-left: 35px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.radio-filter label::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent url("../img/sprite.png") no-repeat;
+    background-position: -10px -166px; 
+}
+
+
+/* Замена стандартных чекбоксов */
+input[type="checkbox"] {
+    display:none;                     /* стандартные чек-боксы исчезли */
+}
+
+.checkbox-filter label {
+    display:block;
+    padding-left: 35px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 17px;
+     
+}
+
+.checkbox-filter label::before {
+    content: "";
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent url("../img/sprite.png") no-repeat;
+    background-position: -10px -80px; 
+}
+
+input[type="checkbox"]:checked .checkbox-filter label::before {
+    content: "";
+    width: 26px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent url("../img/sprite.png") no-repeat;
+    background-position: -10px -123px; 
+    
+}
+
 /* Каталог */
 .catalog-items {
     width: 560px;
@@ -316,9 +393,10 @@ form button {
     top: 50px;
     left: 20px;
     height: 200px;                        /*спрятал попап  нужно зацентровать! Абсолюьно спозиционарован от catalog-item */
-    
     background-color: white;
 }
+
+
 
 .popup-block h3 {
     font-size: 18px;
@@ -344,7 +422,25 @@ form button {
     color: #ffffff;
     width: 140px;
     height: 28px;
+    border-radius: 3px;
     background-color: #fb565a;
+}
+
+.catalog-item:hover .popup-block {
+    display: block;
+}
+
+.catalog-item:hover .border-img {
+    background-color: #797979;
+}
+
+.popup-block a:hover {
+    background-color: #d6494d;
+}
+
+.popup-block a:active {
+    background-color: #b63538;
+    box-shadow: inset 0 3px 0 0px #9b2d30;
 }
 
 .catalog-item {
@@ -368,33 +464,43 @@ form button {
     clear: both;
 }
 
-.pages ul {
-    padding-left: 0px;
-    list-style-type:none;
-}
-
-.pages li {
+.pages-btn {
     display: inline-block;
     margin-right: 10px; 
-    
+    text-align: center;
+    color: #000000;
+    padding-top: 8px;
+    background-color: #f1f1f1;  
+    border-radius: 3px;
 }
 
-.pages-btn {
-    width: 35px;
-    height: 27px;
-    text-align: center;
-    padding-top: 8px;
-    background-color: #f1f1f1;  /* Это кнопки или ссылки ? */
-    border: 2px solid #f1f1f1 ;
-    border-radius: 3px;
+.pages .hover-btn {
+   width: 35px;
+   height: 27px;
+   
+   
+} 
+
+.hover-btn:hover {
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+}
+
+.hover-btn:active {
+    background-color: #d5d5d5;
+    border: 2px solid #d5d5d5;
     
+    box-shadow: inset 0 3px 0 -2px #b5b5b5;
 }
 
 .current-btn {
     background-color: #ffffff;
+    border: 2px solid black;
+    width: 35px;
+    height: 27px;
 }
 
-.btn-next {
+.pages .btn-next {
     width: 140px;
 }
 

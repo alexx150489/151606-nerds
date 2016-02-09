@@ -5,7 +5,7 @@ min-width: 1200px;
 font-size: 16px;
 line-height: 22px;
 color: #000000;
-background-color: #e2e0e0;
+
 font-weight: normal; 
 font-style: normal;
 font-family: "Roboto", "Arial", sans-serif;   
@@ -197,6 +197,7 @@ ul, li, p {
 }
 
 .slider-content p {
+    color: #283136;
     margin-bottom: 24px;
 }
 
@@ -249,17 +250,22 @@ ul, li, p {
     background-color: white;
 }
 
+.content .container {
+    background-color: white;
+}
+
 .features-item {
     width: 240px;
     float: left;
     margin-right: 80px;
-    background-color: yellow;
+    background-color: white;
 }
 
 .features-item p {
     margin-bottom: 24px;
     font-size: 15px;
     line-height: 22px;
+    color: #283136;
     
 }
 
@@ -302,18 +308,50 @@ ul, li, p {
     margin-right: 0;
 }
 
+.features-item .btn-red:hover {
+     background-color: #d6494d;
+}
+
+.features-item .btn-green:hover {
+    background-color: #01a25e;
+}
+
+.features-item .btn-yellow:hover {
+    background-color: #d6ae2c;
+}
+
+.features-item .btn-red:active {
+     background-color: #b63538;
+     box-shadow: inset 0 2px 0 1px #9b2d30;
+}
+
+.features-item .btn-green:active {
+    background-color: #009053;
+    box-shadow: inset 0 2px 0 1px #007b47;
+}
+
+.features-item .btn-yellow:active {
+    background-color: #c09b24;
+    box-shadow: inset 0 2px 0 1px #a3841f;
+}
+
+
 /* Инфо блок */
 .info {
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
     padding-bottom: 72px;
     padding-top: 68px;
     
 }
 
+.info p, ul {
+    color: #283136;
+}
+
 .content-column-title {
     padding-top: 15px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .content-column-left p + p  {
@@ -322,11 +360,10 @@ ul, li, p {
 }
 
 
-
 .content-column-left {
     width: 621px;
     float: left;
-    background-color: darkcyan;
+    background-color: white;
 }
 
 
@@ -361,38 +398,82 @@ ul, li, p {
 .content-column-right {
     width: 240px;
     float: right;
-    background-color: cyan;
+    background-color: white;
 }
 
 
 
 .red-dash {
-    color: red;
+    color: red;  /* дефисы недосточно длинные */
 }
 
 /* Парнеры */
 .partners {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #eeeeee;
     padding-top: 45px;
     width: 880px;
-    text-align: center; 
+    
     padding-bottom: 31px; 
     margin-bottom: 85px;
+    background-color: white;
 }
 
 
 
-.partners-item {
+.partners a {
   display: inline-block;
-  margin-right: 100px;
-  vertical-align: middle;    /* верное выравнивание !!! */
-   
+  margin-right: 120px;
+  vertical-align: middle;
+}
+
+.glukhanko {
+    margin-left: 12px; 
+    width: 198px;
+    height: 37px;
+    background-image: url("../img/glukhanko.png") ;
+    background-repeat: no-repeat;
+}
+
+.htmlacademy {
+    width: 199px;
+    height: 68px;
+    background-image: url("../img/htmlacademy.png") ;
+    background-repeat: no-repeat;
 }
 
 
+.borodinski {
+    width: 209px;
+    height: 86px;
+    background-image: url("../img/borodinski.png") ;
+    background-repeat: no-repeat;
+}
 
-.partners div:last-child {
+
+.partners a:last-child {
     margin-right: 0px; 
+}
+
+.glukhanko:hover {
+    margin-left: 12px; 
+    width: 198px;
+    height: 37px;
+    background-image: url("../img/glukhanko-black.png") ;
+    background-repeat: no-repeat;
+}
+
+.htmlacademy:hover {
+     width: 199px;
+    height: 68px;
+    background-image: url("../img/htmlacademy-black.png") ;
+    background-repeat: no-repeat;
+}
+
+.borodinski:hover {
+    width: 209px;
+    height: 86px;
+    background-image: url("../img/borodinski-black.png") ;
+    background-repeat: no-repeat;
 }
 
 /* Карта */
