@@ -12,14 +12,14 @@
     <header class="main-header">
         <div class="container header-wrapper clearfix">
             <div class="main-logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/logo-header.png" width="139" height="56" alt="Нёрдс-логотип">
                 </a>    
             </div> 
             <nav class="main-menu">
                 <ul>
                     <li>
-                        <a href="#">СТУДИЯ</a>
+                        <a href="index.html">СТУДИЯ</a>
                     </li>
                     <li>
                         <a href="#">КЛИЕНТЫ</a>
@@ -44,136 +44,139 @@
     <div class="content">
         <div class="container clearfix">
           <div class="filters">  
-                <div class="price-filter">
+                <div class="range-filter">
                     <h3>Стоимость:</h3>
-                    <div class="maket">
-                    </div>    
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                        <label class="min-price">от <input name="min-price" type="text" value="0">
+                        </label>
+                        <label class="max-price">до <input name="max-price" type="text" value="15000">
+                        </label>
+                    </div>
                 </div>
-                <div class="radio-filter">
-                    <form>
+                
+                <form>
+                    <div class="radio-filter">
                         <h3>Сетка:</h3>
-                        <label for="adaptive">
-                            <input id="adaptive" type="radio" name="type" value="rad1" checked>Адаптивная<br>
-                        </label>
-                        <label for="fixed">
-                            <input id="fixed" type="radio" name="type" value="rad2">Фиксированная<br>
-                        </label>
-                        <label for="rubber">
-                            <input id="rubber" type="radio" name="type" value="rad3">Резиновая<br>
-                        </label>    
-                    </form> 
-                 </div>    
-                 <div class="checkbox-filter">
-                     <form>    
-                         <h3>Особенности:</h3>
-                         <label for="option1">
-                            <input id="option1" type="checkbox" name="option1" value="#" checked>Слайдер<br>
-                         </label>
-                         <label for="option2">
-                            <input id="option2" type="checkbox" name="option2" value="#">Блок преимуществ<br>
-                         </label>     
-                         <label for="option3">
-                            <input id="option3" type="checkbox" name="option3" value="#" checked>Новости<br>
-                         </label>
-                         <label for="option4">
-                            <input id="option4" type="checkbox" name="option4" value="#">Галерея<br>
-                         </label>
-                         <label for="option5">
-                            <input id="option5" type="checkbox" name="option5" value="#">Корзина<br>
-                         </label>     
-                         <button type="submit">ПОКАЗАТЬ</button>
-                    </form>
-                </div>
-          </div>      
-          <div class="catalog-items">
-                <div class="sorting-item">
-                    <ul>
-                        <li>СОРТИРОВАТЬ:</li>
-                        <li><span class="sorting-price">ПО ЦЕНЕ</span></li>
-                        <li><span class="sorting-type">ПО ТИПУ</span></li>
-                        <li><span class="sorting-functional">ПО ФУНКЦИОНАЛУ</span></li>
-                    </ul>    
-                </div>
-                 <div class="catalog-wrapper">
-                        <article class="catalog-item">
-                            <div class="border-img">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul> 
-                            </div> 
-                            <img src="img/aviator.jpg" width="240" height="240" alt="aviator.jpg">
-                        </article>
-                        <article class="catalog-item">
-                            
-                                <div class="popup-block">
-                                    <h3>SUNSET</h3>
-                                    <p>Интернет-магазин<br> с личным кабинетом</p>
-                                    <a href="#">10000 Р.</a>
-                                </div>
-                                
-                            <div class="border-img">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul> 
-                            </div> 
-                            <img src="img/sunset.jpg" width="240" height="240" alt="sunset.jpg">
-                        </article>
-                        <article class="catalog-item">
-                            <div class="border-img">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul> 
-                            </div> 
-                            <img src="img/forte.jpg" width="240" height="240" alt="forte.jpg">
-                        </article>
-                        <article class="catalog-item">
-                            <div class="border-img">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul> 
-                            </div> 
-                            <img src="img/modern-organic-thai.jpg" width="240" height="240" alt="modern-organic-thai.jpg">
-                        </article>
-                        <article class="catalog-item">
-                            <div class="border-img">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul> 
-                            </div> 
-                            <img src="img/avenue.jpg" width="240" height="240" alt="avenue.jpg">
-                        </article>
-                        <article class="catalog-item">
-                            <div class="border-img">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>    
-                            </div> 
-                            <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail.jpg">
-                        </article>
-                </div>
-                <div class="pages">
-                        
-                        <a class="pages-btn current-btn" href="#">1</a>
-                        <a class="pages-btn hover-btn" href="#">2</a>
-                        <a class="pages-btn hover-btn" href="#">3</a>
-                        <a class="pages-btn hover-btn btn-next" href="#">СЛЕДУЮЩАЯ</a>
-                        
-                </div>    
-           </div>
-        </div>    
-     </div>  
+                        <label for="adaptive">Адаптивная<br></label>
+                        <input id="adaptive" type="radio" name="type" value="rad1" checked>
+                        <label for="fixed">Фиксированная<br></label>
+                        <input id="fixed" type="radio" name="type" value="rad2">
+                        <label for="rubber">Резиновая<br></label>
+                        <input id="rubber" type="radio" name="type" value="rad3">
+                    </div>    
+                    <div class="checkbox-filter">
+                        <h3>Особенности:</h3>
+                        <label for="option1">Слайдер<br></label>
+                        <input id="option1" type="checkbox" name="option1" value="#" checked>
+                        <label for="option2">Блок преимуществ<br></label>
+                        <input id="option2" type="checkbox" name="option2" value="#">
+                        <label for="option3">Новости<br></label>
+                        <input id="option3" type="checkbox" name="option3" value="#" checked>
+                        <label for="option4">Галерея<br></label>
+                        <input id="option4" type="checkbox" name="option4" value="#">
+                        <label for="option5">Корзина<br></label>
+                        <input id="option5" type="checkbox" name="option5" value="#">
+                        <button type="submit">ПОКАЗАТЬ</button>
+                    </div>
+               </form>
+                
+              </div>      
+              <div class="catalog-items">
+                    <div class="sorting-item">
+                        <ul>
+                            <li>СОРТИРОВАТЬ:</li>
+                            <li><a href="#" class="sorting-price active">ПО ЦЕНЕ</a><a class="triangle" href="#"></a></li>
+                            <li><a href="#" class="sorting-type active">ПО ТИПУ</a></li>
+                            <li><a href="#" class="sorting-functional active">ПО ФУНКЦИОНАЛУ</a></li>
+                        </ul>    
+                    </div>
+                     <div class="catalog-wrapper">
+                            <article class="catalog-item">
+                                <div class="border-img">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul> 
+                                </div> 
+                                <img src="img/aviator.jpg" width="240" height="240" alt="aviator.jpg">
+                            </article>
+                            <article class="catalog-item">
+
+                                    <div class="popup-block">
+                                        <h3>SUNSET</h3>
+                                        <p>Интернет-магазин<br> с личным кабинетом</p>
+                                        <a href="#">10000 Р.</a>
+                                    </div>
+
+                                <div class="border-img">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul> 
+                                </div> 
+                                <img src="img/sunset.jpg" width="240" height="240" alt="sunset.jpg">
+                            </article>
+                            <article class="catalog-item">
+                                <div class="border-img">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul> 
+                                </div> 
+                                <img src="img/forte.jpg" width="240" height="240" alt="forte.jpg">
+                            </article>
+                            <article class="catalog-item">
+                                <div class="border-img">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul> 
+                                </div> 
+                                <img src="img/modern-organic-thai.jpg" width="240" height="240" alt="modern-organic-thai.jpg">
+                            </article>
+                            <article class="catalog-item">
+                                <div class="border-img">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul> 
+                                </div> 
+                                <img src="img/avenue.jpg" width="240" height="240" alt="avenue.jpg">
+                            </article>
+                            <article class="catalog-item">
+                                <div class="border-img">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>    
+                                </div> 
+                                <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail.jpg">
+                            </article>
+                    </div>
+                    <div class="pages">
+
+                            <a class="pages-btn current-btn" href="#">1</a>
+                            <a class="pages-btn hover-btn" href="#">2</a>
+                            <a class="pages-btn hover-btn" href="#">3</a>
+                            <a class="pages-btn hover-btn btn-next" href="#">СЛЕДУЮЩАЯ</a>
+
+                    </div>    
+               </div>
+            </div>    
+         </div>  
     
    
 

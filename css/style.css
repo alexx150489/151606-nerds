@@ -58,7 +58,7 @@ ul, li, p {
     width: 880px;
     padding: 0 10px;
     margin: 0 auto;
-    background-color: beige ;
+    
 }
 .main-header {
     background-color: #eeeeee;
@@ -66,11 +66,12 @@ ul, li, p {
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
+    
 }
 
 .header-wrapper {
-    background-color: #eeeeee;
     padding-top: 27px;
+    margin-bottom: 
 }
 
 .main-logo {
@@ -167,81 +168,132 @@ ul, li, p {
 }
 
 /* Слайдер */
+
 .slider {
+    position: relative;
     width: 880px;
-    margin-top: 34px;
-    padding-bottom: 0px;
-    background-color: bisque;
+    height: 310px;
+    margin-top: 40px;
+    text-transform: none;
+    /*margin: 0 auto;*/
+    background-color: #eeeeee;
+}
+
+.slider input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],           /* если чекед,  то поменяй фон у кнопки (центр) */
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    background-color: white;
+    border: 3px solid white;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls .active {
+    background-color: #c1c1c1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.slide-text {
+    width: 500px;
+    padding: 30px 0;
+    color: #283136;
+}
+
+.slide p {
+    margin:0;
+    padding: 0;
     font-size: 16px;
     line-height: 22px;
-    text-transform: none;
-    
 }
 
-.slider .title {
+.slide-title {
     font-size: 36px;
-    line-height: 36px;
-    margin-bottom: 13px;
-    
+    line-height: 1;
+    color: black;
+    margin-bottom: 22px;
 }
 
-.slider-content {
-    width: 380px;
-    float: left;
-    margin-bottom: 80px;
-    margin-top: 41px;
-    margin-right: 20px;
-    vertical-align: middle;
-    background-color: darkolivegreen; 
-    
-}
-
-.slider-content p {
-    color: #283136;
-    margin-bottom: 24px;
-}
-
-.slider-content .btn {
+.slide .btn{
+    display: block;
     width: 240px;
-    height: 28px;
+    height: 35px;
+    padding-top: 3px;
+    margin-top: 25px;
+    font-size: 12px;
+    color: white;
     text-align: center;
-    padding-top: 10px;
+    text-decoration: none;
     background-color: #fb565a;
     border-radius: 3px;
-    font-size: 12px;
-    line-height: 18px;
 }
 
-.slider-btn {
-    width: 60px;
-    float: left;
-    margin-top: 208px;
-    margin-right: 21px;
-    margin-bottom: 94px;
-    background-color: crimson;
+.slide:nth-child(1) {
+    background-image: url("../img/slider-devices.png");
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
+    
 }
 
-.slider-btn ul {
-    margin: 0px;
-    padding-left: 6px;
+.slide:nth-child(2) {
+    background-image: url("../img/slider-calculator.png");
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
 }
 
-.slider-btn li {
-    display: inline-block;
-    text-align: center;
-    list-style-type:none;
-    width: 10px;
-    height: 10px;
-    margin: 0px;
-    margin-right: 5px;
-    background-color: white;
-    border-radius: 50%;
+.slide:nth-child(3) {
+    background-image: url("../img/slider-robot.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
 }
 
-.slider-pic {
-    width: 399px;
-    float: right;
-    background-color: darkolivegreen;
+.slide {
+  display: none;                                       /* Прячем все слайды (display: none) но, если выбрана первая кнопка, то у покажи первый слайд (display: block)  */
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
 }
 
 
@@ -581,7 +633,7 @@ ul, li, p {
   height: 15px;
   
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -399px; 
+  background-position: -10px -519px; 
 }
 
 .social-fb::before {
@@ -592,7 +644,7 @@ ul, li, p {
   width: 12px;
   height: 22px;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -286px; 
+  background-position: -10px -346px; 
 }
 
 .social-inst::before {
@@ -603,7 +655,7 @@ ul, li, p {
   width: 21px;
   height: 21px;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -328px; 
+  background-position: -10px -388px; 
 }
 
 
@@ -641,76 +693,97 @@ ul, li, p {
 /* Инфа по спрайтам
 
 .sprite {
-    background-image: url(".../img/sprite.png");
+    background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-icon-basket {
+.sprite--icon-basket {
     width: 15px;
     height: 15px;
     background-position: -10px -10px;
 }
 
-.sprite-icon-basket-red {
+.sprite--icon-basket-red {
     width: 15px;
     height: 15px;
     background-position: -10px -45px;
 }
 
-.sprite-icon-check-off {
+.sprite--icon-check-off {
     width: 23px;
     height: 23px;
     background-position: -10px -80px;
 }
 
-.sprite-icon-check-on {
+.sprite--icon-check-on {
     width: 27px;
     height: 23px;
     background-position: -10px -123px;
 }
 
-.sprite-icon-circle {
+.sprite--icon-circle {
     width: 25px;
     height: 25px;
     background-position: -10px -166px;
 }
 
-.sprite-icon-circle-dot {
+.sprite--icon-circle-dot {
     width: 25px;
     height: 25px;
     background-position: -10px -211px;
 }
 
-.sprite-icon-down-dir {
+.sprite--icon-down-dir {
     width: 11px;
     height: 10px;
     background-position: -10px -256px;
 }
 
-.sprite-icon-facebook {
-    width: 12px;
-    height: 22px;
+.sprite--icon-down-dir-black {
+    width: 11px;
+    height: 10px;
     background-position: -10px -286px;
 }
 
-.sprite-icon-instagramm {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -328px;
-}
-
-.sprite-icon-up-dir {
+.sprite--icon-down-dir-green {
     width: 11px;
     height: 10px;
-    background-position: -10px -369px;
+    background-position: -10px -316px;
 }
 
-.sprite-icon-vk {
+.sprite--icon-facebook {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -346px;
+}
+
+.sprite--icon-instagramm {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -388px;
+}
+
+.sprite--icon-up-dir {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -429px;
+}
+
+.sprite--icon-up-dir-black {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -459px;
+}
+
+.sprite--icon-up-dir-green {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -489px;
+}
+
+.sprite--icon-vk {
     width: 26px;
     height: 15px;
-    background-position: -10px -399px;
+    background-position: -10px -519px;
 }
-
-
-*/
