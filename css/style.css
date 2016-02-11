@@ -261,6 +261,15 @@ ul, li, p {
     border-radius: 3px;
 }
 
+.slide-text .btn:hover {
+    background-color: #d6494d;
+}
+
+.slide-text .btn:active {
+    background-color: #b63538;
+    box-shadow: inset 0 2px 0 1px #9b2d30;
+}
+
 .slide:nth-child(1) {
     background-image: url("../img/slider-devices.png");
     background-repeat: no-repeat;
@@ -423,12 +432,17 @@ ul, li, p {
     list-style-type:none;
     margin: 0;
     padding: 0;
+    
+    
 }
 
 .content-column-right ul {
     list-style-type:none;
     margin: 0;
     padding: 0;
+   
+    
+    
 }
 
 .content-column-right li {
@@ -437,6 +451,7 @@ ul, li, p {
 
 .content-column-left li {
     padding-bottom: 24px;
+    
 }
 
 .content-column-right p {
@@ -456,7 +471,19 @@ ul, li, p {
 
 
 .red-dash {
-    color: red;  /* дефисы недосточно длинные */
+    
+    
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    background-color: #fb565a;
+    height: 2px;
+    margin-right: 12px;
+    
+    
+    
+      
+                          /* дефисы недосточно длинные */
 }
 
 /* Парнеры */
@@ -589,6 +616,16 @@ ul, li, p {
     line-height: 18px;
     border-radius: 3px;
 }
+
+.map-block a:hover { 
+        background-color: #d6494d;
+}
+
+.map-block a:active {
+    background-color: #b63538;
+    box-shadow: inset 0 2px 0 1px #9b2d30;
+}
+
 
 /*footer ready*/
 .main-footer {

@@ -393,12 +393,13 @@ form button:active {
 
 /* Замена стандартных радио кнопок */
 
+/* стандартные радио исчезли */
 input[type="radio"] {
     display:none;    
-
 }
 
-.radio-filter label {
+/* добавляем в label оступ для кастома, делаем относительным */
+.filters input[type="radio"] + label {
     display:block;
     padding-left: 35px;
     position: relative;
@@ -406,7 +407,8 @@ input[type="radio"] {
     margin-bottom: 15px;
 }
 
-.radio-filter label::before {
+/* в label делаем псевдоэлемент для кастома  */
+.filters input[type="radio"] + label::before {
     content: "";
     width: 25px;
     height: 25px;
@@ -417,13 +419,24 @@ input[type="radio"] {
     background-position: -10px -166px; 
 }
 
-
-/* Замена стандартных чекбоксов */
-input[type="checkbox"] {
-    display:none;                     /* стандартные чек-боксы исчезли */
+/* у лейбла псевдоэлемент меняет свойства, когда у радио появляется атрибут checked */
+.filters input[type="radio"]:checked + label::before {
+    width: 25px;
+    height: 25px;
+    background: transparent url("../img/sprite.png") no-repeat;   
+    background-position: -10px -211px;
 }
 
-.checkbox-filter label {
+
+/* Замена стандартных чекбоксов */
+
+/* стандартные чек-боксы исчезли */
+.filters input[type="checkbox"] {
+    display:none;                     
+}
+
+/* добавляем в label оступ для кастома, делаем относительным */
+.filters input[type="checkbox"] + label {
     display:block;
     padding-left: 35px;
     position: relative;
@@ -431,8 +444,8 @@ input[type="checkbox"] {
     margin-bottom: 17px;
      
 }
-
-.checkbox-filter label::before {
+/* в label делаем псевдоэлемент для кастома  */
+.filters input[type="checkbox"] + label::before {
     content: "";
     width: 23px;
     height: 23px;
@@ -443,17 +456,17 @@ input[type="checkbox"] {
     background-position: -10px -80px; 
 }
 
-input[type="checkbox"]:checked .checkbox-filter label::before {
-    content: "";
-    width: 26px;
-    height: 24px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: transparent url("../img/sprite.png") no-repeat;
-    background-position: -10px -123px; 
-    
+/* у лейбла псевдоэлемент меняет свойства, когда у чек-бокса появляется атрибут checked */
+.filters input[type="checkbox"]:checked + label::before {
+    width: 27px;
+    height: 23px;
+    background: transparent url("../img/sprite.png") no-repeat;   
+    background-position: -10px -123px;
 }
+
+
+    
+
 
 /* Каталог */
 .catalog-items {
@@ -671,6 +684,15 @@ input[type="checkbox"]:checked .checkbox-filter label::before {
     font-size: 12px;
     line-height: 18px;
     border-radius: 3px;
+}
+
+.map-block a:hover { 
+        background-color: #d6494d;
+}
+
+.map-block a:active {
+    background-color: #b63538;
+    box-shadow: inset 0 2px 0 1px #9b2d30;
 }
 
 /*footer ready*/
