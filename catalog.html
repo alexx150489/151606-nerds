@@ -95,6 +95,8 @@
                             <li><a href="#" class="sorting-price active">ПО ЦЕНЕ</a><a class="triangle" href="#"></a></li>
                             <li><a href="#" class="sorting-type active">ПО ТИПУ</a></li>
                             <li><a href="#" class="sorting-functional active">ПО ФУНКЦИОНАЛУ</a></li>
+                            <button></button>
+                            <button></button>
                         </ul>    
                     </div>
                      <div class="catalog-wrapper">
@@ -211,7 +213,7 @@
                  <h3>NЁRDS DESIGN STUDIO</h3>
                   <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
                   <p>тел. +7 (812) 275-75-75</p>
-                  <a href="#">НАПИШИТЕ НАМ</a>
+                  <a class="write-us" href="#">НАПИШИТЕ НАМ</a>
               </div>      
               <img src="img/map-without-block.jpg" width="1200" height="416" alt="Карта">
           </div>
@@ -230,6 +232,27 @@
               </section>      
           </div>
       </footer>
-    
+      
+      <div class="modal-content">
+            <form>
+                <div class="close-btn"></div>
+                <div class="name-input">
+                    <label for="name">Ваше имя:</label><br> 
+                    <input id="name" type="text" name="name" placeholder="ПРЕДСТАВТЕСЬ, ПОЖАЛУЙСТА">
+                </div>
+                <div class="email-input">
+                    <label for="email">Ваш e-mail:</label><br> 
+                    <input id="email" type="text" name="email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+                </div>
+
+                <div class="text-input">
+                    <label for="textarea">Текст письма:</label><br> 
+                    <textarea id="textarea" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+                </div>    
+                <button type="submit">ОТПРАВИТЬ</button>
+
+            </form>    
+       </div>
+    <script src="js/popup.js"></script>
   </body>  
 </html>    
