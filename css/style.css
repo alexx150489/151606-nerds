@@ -778,19 +778,21 @@ ul, li, p {
 
 .modal-content .name-input {
     padding-top: 54px;
-    padding-left: 66px;
+    padding-left: 80px;
     float: left;
 }
 
 .modal-content .email-input {
     padding-top: 54px;
-    padding-right: 76px;
+    padding-right: 90px;
     float: right;
 }
 
 .name-input input {
-    width: 220px;
+    width: 202px;
     height: 38px;
+    font-size: 12px;
+    line-height: 18px;
     margin-top: 12px;
     margin-bottom: 21px;
     border: 2px solid #d7dcde;
@@ -799,7 +801,7 @@ ul, li, p {
 }
 
 .email-input input {
-    width: 220px;
+    width: 202px;
     height: 38px;
     margin-top: 12px;
     border: 2px solid #d7dcde;
@@ -823,14 +825,13 @@ ul, li, p {
 
 .modal-content .text-input {
     margin-top: 12px;
-    padding-right: 90px;
-    padding-left: 66px;
+    padding-left: 80px;
     clear: both;
     margin-bottom: 48px;
 }
 
 .text-input textarea {
-    width: 460px;
+    width: 442px;
     height: 114px;
     margin-top: 12px; 
     resize: none;
@@ -916,7 +917,7 @@ ul, li, p {
     box-shadow: inset 0 2px 0 1px #9b2d30;
 }    
 
-
+/* Меняем цвет placeholder */
 .name-input input::-moz-placeholder { 
     color: black;
     opacity: 1;
