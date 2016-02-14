@@ -41,3 +41,4 @@ popup.classList.remove("modal-content-show"); // переменной popup(.mod
 popup.classList.remove("modal-error"); // Убираем .modal-error анимацию при esc
 }
 });
+

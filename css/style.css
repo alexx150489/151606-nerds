@@ -917,6 +917,32 @@ ul, li, p {
 }    
 
 
+.name-input input::-moz-placeholder { 
+    color: black;
+    opacity: 1;
+}
+.name-input input::-webkit-input-placeholder { 
+    color: black;
+    opacity: 1;
+}
+
+.email-input input::-moz-placeholder { 
+    color: #000000;
+    opacity: 1;
+}
+.email-input input::-webkit-input-placeholder { 
+    color: #000000;
+    opacity: 1;
+}
+
+.text-input textarea::-moz-placeholder { 
+    color: #000000;
+    opacity: 1;
+}
+.text-input textarea::-webkit-input-placeholder { 
+    color: #000000;
+    opacity: 1;
+}
 
 .modal-content-show {
     display: block;
