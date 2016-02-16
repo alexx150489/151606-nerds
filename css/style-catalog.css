@@ -201,6 +201,7 @@ background-color: white;
 .sorting-item a {
     color: #b2b2b2;
     border-bottom: 1px dotted #00ca74;
+    cursor: pointer;
     
 }
 
@@ -224,13 +225,12 @@ background-color: white;
 .sorting-item .triangle-up {
   width: 11px;
   height: 10px;
-  
-  
   display: inline-block;
   vertical-align: middle;
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -10px -429px;
-  border-bottom: 0;    
+  border-bottom: 0;
+  cursor: pointer;  
 }
 
 .sorting-item .triangle-down {
@@ -253,12 +253,12 @@ background-color: white;
     border: 0;  
 }
 
-.triangle-up:hover {
-    border:  0;
+.sorting-item .triangle-up:hover {
+     border-bottom: 0;
 }
 
-.triangle-down:hover {
-    border: 0;  
+.sorting-item .triangle-down:hover {
+    border-bottom: 0;  
 }
 
 
@@ -576,6 +576,7 @@ input[type="radio"] {
     height: 28px;
     border-radius: 3px;
     background-color: #fb565a;
+    cursor: pointer;
 }
 
 .catalog-item:hover .popup-block {
@@ -620,8 +621,7 @@ input[type="radio"] {
     text-align: center;
     color: #000000;
     vertical-align: top;
-    
-    
+    cursor: pointer;    
     border-radius: 3px;
 }
 
@@ -652,6 +652,7 @@ input[type="radio"] {
     width: 36px;
     padding-top: 8px; 
     height: 25px;
+    
 }
 
 .pages .btn-next {
@@ -761,6 +762,7 @@ input[type="radio"] {
     margin-right: 27px;
     border-radius: 50%;
     background-color: #e1e1e1;
+    cursor: pointer;
 }
 
 .social-vk::before {
