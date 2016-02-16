@@ -184,9 +184,9 @@ ul, li, p {
     opacity: 0;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],           /* если чекед,  то поменяй фон у кнопки (центр) */
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+.btn-1:checked ~ .slider-controls label[for="btn-1"],           /* если чекед,  то поменяй фон у кнопки (центр) */
+.btn-2:checked ~ .slider-controls label[for="btn-2"],
+.btn-3:checked ~ .slider-controls label[for="btn-3"] {
   background: #c1c1c1;
 }
 

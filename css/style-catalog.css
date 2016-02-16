@@ -224,32 +224,48 @@ background-color: white;
 .sorting-item .triangle-up {
   width: 11px;
   height: 10px;
-  border: 0;
-  margin-right: 4px;
-  margin-left: 30px;
+  
+  
+  display: inline-block;
   vertical-align: middle;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -256px;  
+  background-position: -10px -429px;
+  border-bottom: 0;    
 }
 
 .sorting-item .triangle-down {
   width: 11px;
   height: 10px;
-  border: 0;
+  margin-right: 4px;
+  margin-left: 30px;
+  display: inline-block;
   vertical-align: middle;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -429px;
+  background-position: -10px -316px;
+  cursor: pointer;
+  border-bottom: 0;  
 }
 
 
 .triangle-up:active {
     background: transparent url("../img/sprite.png") no-repeat;
-    background-position: -10px -286px; 
+    background-position: -10px -459px;
+    border: 0;  
 }
+
+.triangle-up:hover {
+    border:  0;
+}
+
+.triangle-down:hover {
+    border: 0;  
+}
+
 
 .triangle-down:active {
     background: transparent url("../img/sprite.png") no-repeat;
-    background-position: -10px -459px;
+    background-position:  -10px -286px;
+    border: 0;  
 }
  
 /* Фильтры */
@@ -356,7 +372,7 @@ background-color: white;
 }
 
 .radio-filter h3 {
-    margin-bottom: 9px;
+    margin-bottom: 21px;
 }
 
 .checkbox-filter {
@@ -364,7 +380,7 @@ background-color: white;
 }
 
 .checkbox-filter h3 {
-    margin-bottom: 10px;
+    margin-bottom: 22px;
 }
 
 
@@ -414,7 +430,7 @@ input[type="radio"] {
 /* добавляем в label оступ для кастома, делаем относительным */
 .filters input[type="radio"] + label {
     display:block;
-    padding-left: 35px;
+    
     position: relative;
     cursor: pointer;
     margin-bottom: 15px;
@@ -425,7 +441,9 @@ input[type="radio"] {
     content: "";
     width: 25px;
     height: 25px;
-    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
     top: 0;
     left: 0;
     background: transparent url("../img/sprite.png") no-repeat;
@@ -451,7 +469,7 @@ input[type="radio"] {
 /* добавляем в label оступ для кастома, делаем относительным */
 .filters input[type="checkbox"] + label {
     display:block;
-    padding-left: 35px;
+   
     position: relative;
     cursor: pointer;
     margin-bottom: 17px;
@@ -462,7 +480,9 @@ input[type="radio"] {
     content: "";
     width: 23px;
     height: 23px;
-    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 13px;
     top: 0;
     left: 0;
     background: transparent url("../img/sprite.png") no-repeat;
@@ -473,6 +493,7 @@ input[type="radio"] {
 .filters input[type="checkbox"]:checked + label::before {
     width: 27px;
     height: 23px;
+    padding-right: 9px;
     background: transparent url("../img/sprite.png") no-repeat;   
     background-position: -10px -123px;
 }
@@ -579,7 +600,7 @@ input[type="radio"] {
     float: left;
     position: relative;
     margin-right: 80px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .catalog-item:nth-child(even) {
