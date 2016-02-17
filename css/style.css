@@ -1,33 +1,33 @@
 body {
-margin: 0;
-padding: 0;
-min-width: 1200px;
-font-size: 16px;
-line-height: 22px;
-color: #000000;
-font-weight: normal; 
-font-style: normal;
-font-family: "Roboto", "Arial", sans-serif;   
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: normal; 
+    font-style: normal;
+    font-family: "Roboto", "Arial", sans-serif;   
 }
 
 h1 {
-font-size: 36px;
-line-height: 36px;
-margin: 0;
-color: #000000;
-font-weight: normal; 
-font-style: normal;
-font-family: "Roboto", "Arial", sans-serif;      
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    color: #000000;
+    font-weight: normal; 
+    font-style: normal;
+    font-family: "Roboto", "Arial", sans-serif;      
 }
 
 h2 {
-font-size: 36px;
-line-height: 36px;
-margin: 0;
-font-weight: normal; 
-color: #000000;
-font-style: normal;
-font-family: "Roboto" , "Arial", sans-serif;       
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    font-weight: normal; 
+    color: #000000;
+    font-style: normal;
+    font-family: "Roboto" , "Arial", sans-serif;       
 }
 
 h3 {
@@ -51,7 +51,6 @@ ul, li, p {
     list-style-type:none;
 }
 
-
 .clearfix::after {
     content:"";
     display: table;
@@ -70,18 +69,15 @@ ul, li, p {
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
-    
 }
 
 .header-wrapper {
     padding-top: 27px;
-    margin-bottom: 
 }
 
 .main-logo {
     float:left;
     background-color: #eeeeee;
-    
     width: 139px;
     height: 56px;
 }
@@ -92,17 +88,13 @@ ul, li, p {
     margin: 0;
     width: 660px;
     background-color: #eeeeee;
-    
 }
 
 .main-menu ul {
    float: right;
    padding-top: 21px;
-    font-size: 0;
+   font-size: 0;
    list-style-type:none; 
-      
-    
-    
 }
 
 .main-menu li {
@@ -113,19 +105,17 @@ ul, li, p {
     line-height: 30px;
 }
 
-.main-menu a{
+.main-menu a {
     color: #000000;
 }
 
 .main-menu li:last-child {
-    padding-right: 0px;             /* почему с ли работает, а с ул нет ? */
+    padding-right: 0px;             
 }
 
 .main-menu .current-position {
-    
     padding-bottom: 5px;
-    border-bottom: 2px solid #fb565a ;
-    
+    border-bottom: 2px solid #fb565a;
 }
 
 .main-menu a:hover {
@@ -154,22 +144,19 @@ ul, li, p {
   opacity: 0.3;
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -10px -10px;    
-      
 }
 
 .cart:hover::before {
-  background: transparent url("../img/sprite.png") no-repeat;   /* изменяет иконку при наведении */
+  background: transparent url("../img/sprite.png") no-repeat;   
   background-position: -10px -45px; 
   opacity: 1;    
 }
 
 .cart:active::before {
-    background: transparent url("../img/sprite.png") no-repeat;  /* изменяет прозрачность */
+    background: transparent url("../img/sprite.png") no-repeat;  
     background-position: -10px -10px; 
     opacity: 0.15;
 }
-
-/* Слайдер */
 
 .slider {
     position: relative;
@@ -225,7 +212,6 @@ ul, li, p {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    
 }
 
 .slide-text {
@@ -276,7 +262,6 @@ ul, li, p {
     background-image: url("../img/slider-devices.png");
     background-repeat: no-repeat;
     background-position: 100% 10px;
-    
 }
 
 .slide:nth-child(2) {
@@ -295,19 +280,18 @@ ul, li, p {
   display: none;                                       
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(1) {
+.btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(2) {
+.btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
 
-#btn-3:checked ~ .slides .slide:nth-child(3) {
+.btn-3:checked ~ .slides .slide:nth-child(3) {
   display: block;
 }
 
-/* WELCOME-CATALOG */
 .welcome-title {
   clear: both;    
 }
@@ -320,7 +304,6 @@ ul, li, p {
     padding-bottom: 84px;
 }
 
-/* Контент */
 .content {
     background-color: white;
 }
@@ -377,7 +360,6 @@ ul, li, p {
     background-color: #efc84a;
 }
 
-
 .features-item:last-child {
     margin-right: 0;
 }
@@ -409,8 +391,6 @@ ul, li, p {
     box-shadow: inset 0 2px 0 1px #a3841f;
 }
 
-
-/* Инфо блок */
 .info {
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
@@ -482,7 +462,6 @@ ul, li, p {
     margin-right: 12px;
 }
 
-/* Парнеры */
 .partners {
     border-bottom: 2px solid #eeeeee;
     padding-top: 45px;
@@ -491,6 +470,7 @@ ul, li, p {
     margin-bottom: 85px;
     background-color: white;
 }
+
 .partners a {
   display: inline-block;
   margin-right: 120px;
@@ -513,14 +493,12 @@ ul, li, p {
     background-repeat: no-repeat;
 }
 
-
 .partners .borodinski {
     width: 209px;
     height: 86px;
     background-image: url("../img/borodinski.png") ;
     background-repeat: no-repeat;
 }
-
 
 .partners a:last-child {
     margin-right: 0px; 
@@ -548,25 +526,22 @@ ul, li, p {
     background-repeat: no-repeat;
 }
 
-/* Сортировка по */
 .sorting-item ul {
-display: inline-block;
-vertical-align: middle;
-width: 560px;
-position: relative;
-margin-bottom: 21px;
-margin-top: 4px;
-    
-background-color: white; 
-font-size: 12px;
-line-height: 18px;    
+    display: inline-block;
+    vertical-align: middle;
+    width: 560px;
+    position: relative;
+    margin-bottom: 21px;
+    margin-top: 4px;
+    background-color: white; 
+    font-size: 12px;
+    line-height: 18px;    
 }
 
 .sorting-item a {
     color: #b2b2b2;
     border-bottom: 1px dotted #00ca74;
     cursor: pointer;
-    
 }
 
 .sorting-item a:hover {
@@ -588,31 +563,30 @@ line-height: 18px;
 }
 
 .sorting-item .triangle-up {
-  width: 11px;
-  height: 10px;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0;
-  background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -429px;
-  border-bottom: 0;
-  cursor: pointer;  
+    width: 11px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    background: transparent url("../img/sprite.png") no-repeat;
+    background-position: -10px -429px;
+    border-bottom: 0;
+    cursor: pointer;  
 }
 
 .sorting-item .triangle-down {
-  width: 11px;
-  height: 10px;
-  margin-right: 4px;
-  margin-left: 30px;
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-  background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -316px;
-  cursor: pointer;
-  border-bottom: 0;  
+    width: 11px;
+    height: 10px;
+    margin-right: 4px;
+    margin-left: 30px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url("../img/sprite.png") no-repeat;
+    background-position: -10px -316px;
+    cursor: pointer;
+    border-bottom: 0;  
 }
-
 
 .triangle-up:active {
     background: transparent url("../img/sprite.png") no-repeat;
@@ -634,9 +608,6 @@ line-height: 18px;
     background-position:  -10px -286px;
     border: 0;  
 }
- 
-/* Фильтры */
-/* Сложный фильтр */
 
 .range-filter {
     width: 240px;
@@ -703,7 +674,6 @@ line-height: 18px;
     text-align: center;
     border-radius: 5px;
     color: #283136;
-    
 }
 
 .price-controls .min-price {
@@ -769,14 +739,12 @@ form button:active {
     box-shadow: inset 0 3px 0 0px #b5b5b5;
 }
 
-/* Замена стандартных радио кнопок */
-
 input[type="radio"] {
     display:none;    
 }
 
 .filters input[type="radio"] + label {
-    display:block;
+    display: block;
     position: relative;
     cursor: pointer;
     margin-bottom: 15px;
@@ -834,7 +802,6 @@ input[type="radio"] {
     background-position: -10px -123px;
 }
 
-/* Каталог */
 .catalog-items {
     width: 560px;
     float:right;
@@ -935,7 +902,6 @@ input[type="radio"] {
     margin-right: 0;
 }
 
-/* Страницы */
 .pages {
     padding-bottom: 79px;
     background-color: #ffffff;
@@ -980,7 +946,6 @@ input[type="radio"] {
     width: 140px;
 }
 
-/* Карта */
 .map {
     width: 1200px;
     height: 416px;
@@ -992,7 +957,6 @@ input[type="radio"] {
 
 .map iframe {
     border: 0;
-        
 }
 
 .map img {
@@ -1056,8 +1020,6 @@ input[type="radio"] {
     box-shadow: inset 0 2px 0 1px #9b2d30;
 }
 
-
-/*footer ready*/
 .main-footer {
     font-size: 16px;
     line-height: 22px;
@@ -1074,7 +1036,6 @@ input[type="radio"] {
 .footer-social li {
     font-size: 12px;
     line-height: 18px;
-    
     display: inline-block;
     text-align: center;
     background-color: #ffffff;
@@ -1098,7 +1059,6 @@ input[type="radio"] {
   left: 19px;    
   width: 26px;
   height: 15px;
-  
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -10px -519px; 
 }
@@ -1125,7 +1085,6 @@ input[type="radio"] {
   background-position: -10px -388px; 
 }
 
-
 .footer-social a:hover {
     background-color: #fb565a;
 }
@@ -1134,10 +1093,6 @@ input[type="radio"] {
     background-color: #d6494d;
     box-shadow: inset 0 3px 0 1px #b63e42 ;
 }
-
-
-
-
 
 .footer-friendship {
     float: right;
@@ -1153,9 +1108,6 @@ input[type="radio"] {
     padding-bottom: 76px;
 }
 
-/* modal-content */
-
-/*Анимация*/
 @keyframes bounce {
   0%   {
     transform: translateY(-2000px);
@@ -1257,7 +1209,6 @@ input[type="radio"] {
     border: 2px solid #d7dcde;
     border-radius: 3px;
     padding-left: 14px;
-                         
 }
 
 .modal-content button {
