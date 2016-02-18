@@ -69,7 +69,7 @@ ul, li, p {
 }
 
 .header-wrapper {
-    padding-top: 23px;
+    padding-top: 29px;
 }
 
 .main-logo {
@@ -125,7 +125,7 @@ ul, li, p {
     color: #8f8f8f;
 }
 
-.cart-li {
+.cart-block {
     display: inline-block;
     float: right;
     padding-top: 25px;
@@ -243,7 +243,7 @@ ul, li, p {
     display: block;
     width: 240px;
     height: 29px;
-    padding-top: 7px;
+    padding-top: 8px;
     margin-top: 29px;
     font-size: 12px;
     color: white;
@@ -305,7 +305,7 @@ ul, li, p {
     font-size: 40px;
     line-height: 50px;
     text-align: center;
-    padding-top: 65px;
+    padding-top: 60px;
     padding-bottom: 84px;
 }
 
@@ -332,7 +332,7 @@ ul, li, p {
 }
 
 .features-title {
-    padding-top: 16px;
+    padding-top: 17px;
     padding-bottom: 16px;
     font-size: 18px;
     line-height: 30px;
@@ -414,7 +414,7 @@ ul, li, p {
 
 .content-column-left p + p  {
     margin-top: 45px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .content-column-left {
@@ -440,12 +440,12 @@ ul, li, p {
 }
 
 .content-column-left li {
-    padding-bottom: 20px;
+    padding-bottom: 21px;
     
 }
 
 .content-column-right p {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .content-column-right .logo-since {
@@ -536,11 +536,10 @@ ul, li, p {
     vertical-align: middle;
     width: 560px;
     position: relative;
-    margin-bottom: 21px;
-    margin-top: 4px;
+    margin-bottom: 23px;
     background-color: white; 
     font-size: 12px;
-    line-height: 18px;    
+    line-height: 12px;    
 }
 
 .sorting-item a {
@@ -561,7 +560,7 @@ ul, li, p {
 
 
 .sorting-item li {
-    padding-right: 46px;
+    padding-right: 40px;
     display: inline-block;
     list-style-type:none;
     vertical-align: middle;
@@ -583,7 +582,7 @@ ul, li, p {
     width: 11px;
     height: 10px;
     margin-right: 4px;
-    margin-left: 30px;
+    margin-left: 55px;
     padding: 0;
     display: inline-block;
     vertical-align: middle;
@@ -616,11 +615,11 @@ ul, li, p {
 
 .range-filter {
     width: 240px;
-    margin-bottom: 41px;
+    margin-bottom: 36px;
 }
 
 .range-filter h3 {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
 .range-filter .range-controls {
@@ -682,11 +681,11 @@ ul, li, p {
 }
 
 .price-controls .min-price {
-    margin-right: 14px;
+    margin-right: 13px;
 }
 
 .range-controls .toggle-max {
-    left: 145px;
+    left: 158px;
 }
 
 .filters {
@@ -696,7 +695,7 @@ ul, li, p {
 
 .radio-filter {
     width: 240px;
-    margin-bottom: 39px;
+    margin-bottom: 48px;
 }
 
 .radio-filter h3 {
@@ -708,7 +707,7 @@ ul, li, p {
 }
 
 .checkbox-filter h3 {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .price-controls input {
@@ -722,13 +721,13 @@ ul, li, p {
 
 .filters h3 {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 18px;
 }
 
 .filters button {
     width: 156px;
     height: 38px;
-    margin-top: 57px;
+    margin-top: 38px;
     font-size: 12px;
     line-height: 18px;
     background-color: #f1f1f1;
@@ -900,7 +899,7 @@ input[type="radio"] {
     float: left;
     position: relative;
     margin-right: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
 }
 
 .catalog-item:nth-child(even) {
@@ -911,11 +910,14 @@ input[type="radio"] {
     padding-bottom: 79px;
     background-color: #ffffff;
     clear: both;
+    font-size: 12px;
+    line-height: 18px;
+        
 }
 
 .pages a {
     display: inline-block;
-    margin-right: 10px; 
+    margin-right: 6px; 
     text-align: center;
     color: #000000;
     vertical-align: top;
