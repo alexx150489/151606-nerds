@@ -548,17 +548,17 @@ ul, li, p {
     border: 0;
 }
 
+.sorting-item li:first-child {
+    padding-right: 35px;
+}
 
 .sorting-item li {
-    padding-right: 39px;
+    padding-right: 42px;
     display: inline-block;
     list-style-type:none;
     vertical-align: middle;
 }
 
-.sorting-item li:nth-child(4) {
-    padding-right: 0;
-}
 
 .sorting-item .triangle-up {
     width: 11px;
@@ -576,7 +576,7 @@ ul, li, p {
     width: 11px;
     height: 10px;
     margin-right: 4px;
-    margin-left: 98px;
+    margin-left: 54px;
     padding: 0;
     display: inline-block;
     vertical-align: middle;
