@@ -59,8 +59,8 @@ ul, li, p {
     width: 880px;
     padding: 0 10px;
     margin: 0 auto;
-    
 }
+
 .main-header {
     background-color: #eeeeee;
     margin-bottom: 80px;
@@ -98,13 +98,11 @@ ul, li, p {
     vertical-align: top;
     display: inline-block;
     padding-right: 45px;
-        
 }
 
 .main-menu a {
     color: #000000;
     font-size: 14px;
-    
 }
 
 .main-menu li:last-child {
@@ -905,7 +903,6 @@ input[type="radio"] {
     clear: both;
     font-size: 12px;
     line-height: 18px;
-        
 }
 
 .pages a {
@@ -984,6 +981,7 @@ input[type="radio"] {
     line-height: 30px;
     color: #000000;
 }
+
 .map-block p {
     font-size: 16px;
     line-height: 20px;
