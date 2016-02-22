@@ -292,6 +292,8 @@ ul, li, p {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 84px;
+    width: 700px;
+    margin-left: 84px;
 }
 
 .content {
@@ -406,7 +408,7 @@ ul, li, p {
 }
 
 .content-column-left {
-    width: 621px;
+    width: 618px;
     float: left;
     background-color: white;
 }
@@ -946,6 +948,12 @@ input[type="radio"] {
     margin: 0 auto 77px;
     position: relative;
     background-color: chartreuse;
+}
+
+.map .google-map {
+    width: 1200px;
+    height: 416px;
+    background: url("../img/map-without-block.jpg") no-repeat;
 }
 
 .map iframe {
